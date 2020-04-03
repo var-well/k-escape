@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 학점 페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/page1.css">
+    <link rel="icon" href="./images/vw_favicon.ico"> 
+    <link rel="apple-touch-icon" href="./images/vw_favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum+Gothic:400,700,800|Noto+Sans+KR:400,500,700|Pacifico&display=swap&subset=korean" rel="stylesheet">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/page1.js"> </script>
+</head>
+<body>
+<div class="body__container">
+    
+        <header class="header">
+            <div class="header__container">
+                    <a class="logo__container" href="#">
+                        <img class="logo" src="./images/vw-logo.svg" alt="LOGO">
+                    </a>
+                    <div class="header__menu-group">
+                        <ul class="header__menu">
+                            <li><a href="#" class="menu-item" id="log-inout">로그아웃</a></li>
+                            <li><a href="#" class="menu-item menu">MY PAGE</a></li>
+                            <li><a href="#" class="menu-item menu">MENU</a></li>
+                            <li><a href="#" class="menu-item menu">HOME</a></li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </header>
+
+        <section class="">
+            <div class="text__container">
+                <h2 class="section content__title"> 가려져서 안 보임 ㅋ</h2>
+                <p class="section content__p">
+                    Enim cillum elit adipisicing velit. Consequat quis eiusmod in labore veniam dolor in commodo nulla
+                    mollit. Enim non deserunt laborum ullamco commodo ea quis ut.
+
+                    Sit elit tempor nisi amet deserunt sit enim do adipisicing. Cupidatat esse aliqua cillum cillum et
+                    esse officia tempor. Consectetur incididunt aute elit veniam dolore. In eiusmod mollit aliquip ut
+                    mollit cupidatat proident id minim aliquip tempor culpa enim ad. Adipisicing enim commodo nisi
+                    reprehenderit mollit. Amet laboris ex cillum elit ut quis Lorem minim officia anim. Aliquip cillum
+                    pariatur ea amet nisi do fugiat.
+                </p>
+            </div>
+            <div class="content__container fadeinout">
+                <div class="content">
+                    <div class="content--tabs">
+                        <div class="tabs__nav">
+                            <ul class="tabs__list">
+                                <li class="tabs__item current" data-tabs="tab1">MAIN</li>
+                                <li class="tabs__item" data-tabs="tab2">전공학점</li>
+                                <li class="tabs__item" data-tabs="tab3">교양학점</li>
+                                <li class="tabs__item" data-tabs="tab4">복수/부/연계</li>
+                                <li class="tabs__item" data-tabs="tab5">공학인증</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content--main ">
+                        <div class="content__card-container">
+                            <div id="tab1" class="card-content current">
+                                <h2 class="content--title">여기다가 뭐 쓰지ㅣㅣㅣ</h2>
+                                <p class="content--explanation">  </p>
+
+                                <!-- 단과대, 학부, 학번, 이름 정보 -->
+                                <table class="table-information">
+                                    <thead class="table table__head">
+                                        <tr>
+                                            <th class="tdth th">단과대학</th>
+                                            <th class="tdth th">학부</th>
+                                            <th class="tdth th">학번</th>
+                                            <th class="tdth th">이름</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table table__body">
+                                        <tr>
+                                            <td class="tdth td" id="college">소프트웨어융합대학</td>
+                                            <td class="tdth td" id="major">ㅁㅁㅁㅁ학부</td>
+                                            <td class="tdth td" id="class-of">202000000</td>
+                                            <td class="tdth td" id="name">REASON</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- 필수 균형 기초 교양(16학번 이전/이후 따로 다뤄야함) -->
+                                <h2 class="content--title">16학번 교양교과목 이수체계</h2>
+                                <table class="table-information">
+                                    <thead class="table table__head">
+                                        <tr>
+                                            <th class="tdth th">필수교양</th>
+                                            <th class="tdth th">균형교양</th>
+                                            <th class="tdth th">기초교양</th>
+                                            <th class="tdth th">학과별로상이</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table table__body">
+                                        <tr>
+                                            <td class="tdth td">광운인되기</td>
+                                            <td class="tdth td">인간과철학</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdth td">영어*</td>
+                                            <td class="tdth td">사회와경제</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdth td">과학과기술</td>
+                                            <td class="tdth td">글로벌문화와제2외국어</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdth td">언어와표현</td>
+                                            <td class="tdth td">예술과체육</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                            <td class="tdth td">학과별로상이</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- 성적내역 -->
+                                <h2 class="content--title">2020년도 1학기 성적내역</h2>
+                                <table class="table-information">
+                                    <thead class="table table__head" style="font-size: 14px;">
+                                        <tr>
+                                            <th class="tdth th">학정번호</th>
+                                            <th class="tdth th">과목명</th>
+                                            <th class="tdth th">개설학과</th>
+                                            <th class="tdth th">이수구분</th>
+                                            <th class="tdth th">학점</th>
+                                            <th class="tdth th">성적</th>
+                                            <th class="tdth th">인증구분</th>
+                                            <th class="tdth th">재수강<br/>여부</th>
+                                            <th class="tdth th">재수강이후<br/>삭제여부</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table table__body" style="font-size: 12px;">
+                                        <tr>
+                                            <td class="tdth td">H040-4-8995-01</td>
+                                            <td class="tdth td">산학협력캡스톤설계1</td>
+                                            <td class="tdth td">정보융합학부</td>
+                                            <td class="tdth td">전선</td>
+                                            <td class="tdth td">3</td>
+                                            <td class="tdth td">미입력</td>
+                                            <td class="tdth td">-</td>
+                                            <td class="tdth td">-</td>
+                                            <td class="tdth td">-</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tdth td">H040-4-8995-01</td>
+                                            <td class="tdth td">산학협력캡스톤설계1</td>
+                                            <td class="tdth td">정보융합학부</td>
+                                            <td class="tdth td">전선</td>
+                                            <td class="tdth td">3</td>
+                                            <td class="tdth td">미입력</td>
+                                            <td class="tdth td">-</td>
+                                            <td class="tdth td">-</td>
+                                            <td class="tdth td">-</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__card-container">
+                        <div class="content__card">
+                            <div id="tab2" class="card-content">
+                                <!-- 필수 균형 기초 교양(16학번 이전/이후 따로 다뤄야함 2번탭 -->
+                            <h2 class="content--title"> 전공 관련 페이지<br/>(16이전/이후 따로 다루기)</h2>
+                            <table class="table-information">
+                                <thead class="table table__head">
+                                    <tr>
+                                        <th class="tdth th">필수전공</th>
+                                        <th class="tdth th">단일전공</th>
+                                        <th class="tdth th">뭐넣지?</th>
+                                        <th class="tdth th">졸업이수학점</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table table__body">
+                                    <tr>
+                                        <td class="tdth td">광운인되기</td>
+                                        <td class="tdth td">인간과철학</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdth td">영어*</td>
+                                        <td class="tdth td">사회와경제</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdth td">과학과기술</td>
+                                        <td class="tdth td">글로벌문화와제2외국어</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="tdth td">언어와표현</td>
+                                        <td class="tdth td">예술과체육</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                        <td class="tdth td">학과별로상이</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__card-container">
+                        <div class="content__card">
+                            <div id="tab3" class="card-content">
+                            교양학점 관련 페이지
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content__card-container">
+                        <div class="content__card">
+                            <div id="tab4" class="card-content">
+                            복수/부/연계전공 학점 관련 페이지
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ccontent__card-container">
+                        <div class="content__card">
+                            <div id="tab5" class="card-content">
+                            공학인증 관련 페이지
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer container">
+                <ul class="copy-right">
+                    <li>Copyright © Var-Well. All Rights Reserved.</li>
+                </ul>
+            </div>
+           </footer>
+
+</div>
+</body>
+</html>
