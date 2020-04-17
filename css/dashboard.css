@@ -1,0 +1,150 @@
+/* common css */
+
+.bundle {
+    margin-bottom: 25px;
+}
+
+/* content css */
+
+#content-wrapper {
+    background: #f8f9fa;
+    padding: 0px 40px 10px 40px;
+    z-index: 1;
+}
+
+/* card css */
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(111, 109, 143, 0.23);
+}
+
+
+/* graph css */
+
+.graph-layout {
+    height: 440px;
+    margin-bottom: 24px;
+}
+
+.card .card-header {
+    background: white;
+}
+
+.card-header p {
+    margin: 0px;
+}
+
+.card .card-content {
+    margin: 46px 0px;
+}
+
+.card-content i {
+
+}
+
+.card .card-subscribe {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.card-subscribe table {
+    margin: 0px;
+}
+
+/* card detail */
+
+#content-wrapper .card-body {
+    height: 120px;
+    padding: 10px 20px;
+}
+
+.gradient-blue {
+    background: linear-gradient(180deg, rgb(54, 201, 181), rgb(66, 136, 228))!important;
+    border : 0;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.gradient-red {
+    background: linear-gradient(180deg,#FF7A90, #F0A44E)!important;
+    border : 0;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.gradient-green {
+    background: linear-gradient(180deg,#C846E9, #804DF7 )!important;
+    border : 0;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.gradient-orange {
+    background: linear-gradient(180deg, #6DABFC, #5560FD )!important;
+    border : 0;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.card-body {
+    color: white;
+}
+
+.card-body p {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.card-body .card-data {
+    font-size: 21px;
+}
+
+.card-body p span {
+    margin-right: 2px;
+}
+
+.card-body i {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card-body .progress-bar {
+    height: 3px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 18px 0px;
+}
+
+.progress-bar .percentage {
+    height: 3px;
+    background: white;
+}
+
+.row-layout {
+    margin-top: 20px;
+}
+
+@media(max-width: 1025px) {
+
+    #content-wrapper .card-subscribe {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 1200px) {
+
+    #content-wrapper .responsive-layout {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width: 990px) {
+    #content-wrapper .responsive-layout2 {
+        margin-top: 20px;
+    }
+}

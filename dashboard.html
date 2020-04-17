@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>종합 정보</title>
+    
+    <!-- etc -->
+    <link rel="icon" href="./images/vw_favicon.ico"> 
+    <link rel="apple-touch-icon" href="./images/vw_favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum+Gothic:400,700,800|Noto+Sans+KR:400,500,700|Pacifico&display=swap&subset=korean" rel="stylesheet">
+    <script src="./js/jquery-3.4.1.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <!-- Chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <!-- js -->
+    <script src="js/dashboard.js"></script>
+    <script src="js/chart.js"></script>
+
+</head>
+<body>
+    <div class="body__container">
+    
+        <header class="header">
+            <div class="header__container">
+                <a class="logo__container" href="#">
+                    <img class="logo" src="./images/vw-logo.svg" alt="LOGO">
+                </a>
+                <div class="header__menu-group">
+                    <ul class="header__menu">                            <li><a href="#" class="menu-item" id="log-inout">로그아웃</a></li>
+                        <li><a href="#" class="menu-item menu">MY PAGE</a></li>
+                        <li><a href="#" class="menu-item menu">MENU</a></li>
+                        <li><a href="#" class="menu-item menu">HOME</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <section class="">
+            
+            <div class="content__container fadeinout">
+                <div class="content">
+
+                    <div class="content--main ">
+                        <div class="content__card-container">
+
+                            <div id="content-wrapper">
+            
+                                <div class="row bundle" style="padding-top: 18px;">
+                                    <div class="col-12 col-lg-6 col-xl-3">
+                                        <div class="card gradient-blue">
+                                            <div class="card-body">
+                                                <p class="card-data">3.56 / 4.5</p>
+                                                <div class="progress-bar">
+                                                    <div class="percentage" style="width: 20%;"></div>
+                                                </div>
+                                                <p>
+                                                    전체학점
+                                                    <span class="align-right">
+                                                        34.2%
+                                                        <i class="fas fa-arrow-up"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-12 col-lg-6 col-xl-3">
+                                        <div class="card gradient-orange">
+                                            <div class="card-body">
+                                                <p class="card-data">3.76 / 4.5</p>
+                                                <div class="progress-bar">
+                                                    <div class="percentage" style="width: 72%;"></div>
+                                                </div>
+                                                <p>
+                                                    전공학점
+                                                    <span class="align-right">
+                                                        34.2%
+                                                        <i class="fas fa-arrow-up"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-12 col-lg-6 col-xl-3">
+                                        <div class="card gradient-green">
+                                            <div class="card-body">
+                                                <p class="card-data">24 / 45</p>
+                                                <div class="progress-bar">
+                                                    <div class="percentage" style="width: 50%;"></div>
+                                                </div>
+                                                <p>
+                                                    전공학점
+                                                    <span class="align-right">
+                                                        15학점
+                                                        <i class="fas fa-arrow-up"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="col-12 col-lg-6 col-xl-3">
+                                        <div class="card gradient-red">
+                                            <div class="card-body">
+                                                <p class="card-data">121 / 140</p>
+                                                <div class="progress-bar">
+                                                    <div class="percentage" style="width: 32%;"></div>
+                                                </div>
+                                                <p>
+                                                    전체학점
+                                                    <span class="align-right">
+                                                        6학점
+                                                        <i class="fas fa-arrow-up"></i>
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                                <div class="row bundle">
+                                    <div class="col-12 col-lg-8 col-xl-8 graph-layout">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                학점 그래프
+                                            </div>
+                                            <div class="">
+                                                <canvas id="myline" style="display: block; height: 390px; width: 781px;"></canvas>
+                                            </div>
+                                            <div class=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-xl-4 graph-layout">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <p>이수학점 분포표</p>
+                                            </div>
+                                            <div class="card-content">
+                                                <canvas id="mydoughnut" style="display: block; height: 187px; width: 374px;"></canvas>
+                                            </div>
+                                            <div class="card-subscribe">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-circle" style="color:rgb(255, 99, 132);"></i>
+                                                                전공학점
+                                                            </td>
+                                                            <td>30학점 / 45학점</td>
+                                                            <td>35%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-circle" style="color: rgb(54, 162, 235);"></i>
+                                                                교양학점
+                                                            </td>
+                                                            <td>30학점 / 45학점</td>
+                                                            <td>35%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="fa fa-circle" style="color: rgb(222, 222, 222);"></i>
+                                                                미이수
+                                                            </td>
+                                                            <td>30학점 / 45학점</td>
+                                                            <td>35%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="row bundle">
+                                    <div class="col-12 col-lg-6 col-xl-4">
+                                        <div class="card">
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xl-4 responsive-layout2">
+                                        <div class="card">
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-xl-4 responsive-layout">
+                                        <div class="card">
+                                            <div class="card-body"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="row bundle">
+                                    <div class="col-12 col-lg-12 col-xl-6">
+                                        <div class="card">
+                                            <div class="card-body" style="height: 502px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-12 col-xl-6">
+                                        <div class="row bundle">
+                                            <div class="col-12 col-lg-6 col-xl-6 responsive-layout">
+                                                <div class="card">
+                                                    <div class="card-body" style="height: 240px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-xl-6 responsive-layout">
+                                                <div class="card">
+                                                    <div class="card-body" style="height: 240px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-xl-6 row-layout">
+                                                <div class="card">
+                                                    <div class="card-body" style="height: 240px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-xl-6 row-layout">
+                                                <div class="card">
+                                                    <div class="card-body" style="height: 240px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                    
+                                <div class="row bundle">
+                                    <div class="col-12 col-lg-4 col-xl-4">
+                                        <div class="card">
+                                            <div class="card-body" style="height: 300px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-8 col-xl-8 responsive-layout2">
+                                        <div class="card">
+                                            <div class="card-body" style="height: 300px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="row bundle">
+                                    <div class="col-12 col-lg-12 col-xl-12">
+                                        <div class="card">
+                                            <div class="card-body" style="height: 300px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    
+    </div>
+</body>
+</html>
