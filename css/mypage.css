@@ -1,5 +1,22 @@
+/* common css */
+
+.bundle {
+    margin-bottom: 25px;
+}
+
+/* content css */
+
 #content-wrapper {
-    
+    background: #f8f9fa;
+    padding: 0px 40px 10px 40px;
+    z-index: 1;
+}
+
+/* card css */
+
+.card {
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(111, 109, 143, 0.23);
 }
 
 #content-wrapper .bundle {
