@@ -6,6 +6,7 @@ a{
 
 body{
     background: #409dad;
+    cursor: url(../images/vw-cursor.png), url(../images/vw-cursor.cur), auto; 
 }
 
 .body__container{
@@ -113,6 +114,10 @@ body{
     flex-direction: row-reverse;
 }
 
+#toggle-btn{
+    display: none;
+}
+
 .menu-item{
     font-size: 18px;
     font-weight: 600;
@@ -141,6 +146,10 @@ body{
 
 
 /*SECTION*/
+
+.content--main__mobile{
+    display: none;
+}
 
 .text__container {
     max-width: 900px;
@@ -313,3 +322,299 @@ body{
     right: 20%;
     vertical-align: middle;
 }
+
+
+/* MEDIA */
+
+@media screen and (max-width : 1024px){
+
+    .content{
+        background-color: rgb(252, 252, 252);
+        box-shadow: 0 8px 17px rgba(104, 102, 102, 0.479);
+        border-radius: 1rem;
+        margin : 10px auto 40px;
+        width : 90%;
+        min-height : 500px;
+    }
+
+
+}
+
+
+@media screen and (max-width : 700px){
+
+    
+    .body__container{
+        width: 100%;
+    }
+
+    header.header{
+        background-color: #f8f8f8;
+        position: fixed;
+        top : 0;
+        left : 0;
+        width: 100%;
+        height: auto;
+
+    }
+
+    header .toggle-menu {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .header__menu li{
+        border-top: 1px solid #d6d6d66e;
+    }
+
+    #log-inout{
+        margin-top : 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    #log-inout:hover{
+        background-color: transparent;
+        color: #5f8991;
+    }
+
+    #toggle-btn{
+        background-image: url("../images/menu-toggle.svg");
+        width : 25px;
+        height : 24px;
+        position: absolute;
+        right: 20px;
+        top : 10px;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: block;
+    }
+
+    .logo__container{
+        width: 0;
+        margin: 0;
+    }
+
+    .logo{
+        width: 25px;
+        position: absolute;
+        top : 12px;
+        margin-left: 15px;
+    }
+
+    .header__container{
+
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+    
+    .header__menu-group.toggle{
+        display: none;
+    }
+
+    .header__menu-group.toggle.on{
+        display: block;
+    }
+
+
+    .header__menu{
+        display: block;
+    }
+
+
+
+    /* 데스크탑 */
+    .content__container {
+        max-width: 100%;
+    }
+
+    .content{
+        background-color: rgb(252, 252, 252);
+        padding: 2rem 1.5rem;
+        box-shadow: 0 8px 17px rgba(104, 102, 102, 0.479);
+        border-radius: 1rem;
+        margin : 0 auto;
+        width : 80%;
+        min-height : 500px;
+        display: none;
+    
+    }
+
+    .content__p{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 20px;
+    }
+
+    /* 모바일 부분 */
+    .content--main__mobile{
+        background-color: #f8f8f8;
+        width : 90vw;
+        margin : 0 auto;
+        height: 300px;
+        padding-top : 20px;
+        border-radius: 20px;
+        display: block;
+        box-shadow: 0 5px 5px rgba(62, 68, 95, 0.26);
+    }
+
+    /* footer */
+
+    .footer .copy-right{
+        font-size: 10px;
+        left : 0;
+        right: 0;
+    }
+
+
+
+}
+
+
+@media screen and (max-width : 450px){
+
+    .body__container{
+        width: 100%;
+    }
+
+    header.header{
+        background-color: #f8f8f8;
+        position: fixed;
+        top : 0;
+        left : 0;
+        width: 100%;
+        height: auto;
+
+    }
+
+    header .toggle-menu {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+
+    .header__menu li{
+        border-top: 1px solid #d6d6d66e;
+    }
+
+    #log-inout{
+        margin-top : 10px;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    #log-inout:hover{
+        background-color: transparent;
+        color: #5f8991;
+    }
+
+    #toggle-btn{
+        background-image: url("../images/menu-toggle.svg");
+        width : 25px;
+        height : 24px;
+        position: absolute;
+        right: 20px;
+        top : 10px;
+        cursor: pointer;
+        text-indent: -9999px;
+        display: block;
+    }
+
+    .logo__container{
+        width: 0;
+        margin: 0;
+    }
+
+    .logo{
+        width: 25px;
+        position: absolute;
+        top : 12px;
+        margin-left: 15px;
+    }
+
+    .header__container{
+
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .header__menu {
+        display: none;
+    }
+    
+    .header__menu-group.toggle{
+        display: none;
+    }
+
+    .header__menu-group.toggle.on{
+        display: block;
+    }
+
+
+    .header__menu{
+        display: block;
+    }
+
+
+
+    /* 데스크탑 */
+    .content__container {
+        max-width: 100%;
+    }
+
+    .content{
+        background-color: rgb(252, 252, 252);
+        padding: 2rem 1.5rem;
+        box-shadow: 0 8px 17px rgba(104, 102, 102, 0.479);
+        border-radius: 1rem;
+        margin : 0 auto;
+        width : 80%;
+        min-height : 500px;
+        display: none;
+    
+    }
+
+    .content__p{
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 20px;
+    }
+
+    /* 모바일 부분 */
+    .content--main__mobile{
+        background-color: #f8f8f8;
+        width : 90vw;
+        margin : 0 auto;
+        height: 300px;
+        padding-top : 20px;
+        border-radius: 20px;
+        display: block;
+        box-shadow: 0 5px 5px rgba(62, 68, 95, 0.26);
+    }
+
+    /* footer */
+
+    .footer .copy-right{
+        font-size: 10px;
+        left : 0;
+        right: 0;
+    }
+
+
+}
+
+@media screen and (max-width : 320px){
+
+
+
+}
+

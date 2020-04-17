@@ -6,6 +6,7 @@ a{
 
 .body__container {
     font-family: 'Nanum Gothic','Noto Sans KR','Nanum Gothic Coding', Arial, Helvetica, sans-serif;
+    cursor: url(../images/vw-cursor.png), url(../images/vw-cursor.cur), auto; 
     min-width: 100%;
     min-height: 100%;
     background-size: cover;
