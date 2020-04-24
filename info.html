@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 학점 페이지</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/info.css">
+    <link rel="icon" href="./images/vw_favicon.ico"> 
+    <link rel="apple-touch-icon" href="./images/vw_favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700|Nanum+Gothic:400,700,800|Noto+Sans+KR:400,500,700|Pacifico&display=swap&subset=korean" rel="stylesheet">
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/info.js"> </script>
+    <script src="https://kit.fontawesome.com/52a062bba8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="body__container">
+    
+        <header class="header">
+            <div class="header__container">
+                    <a class="logo__container" href="#">
+                        <img class="logo" src="./images/vw-logo.svg" alt="LOGO">
+                    </a>
+                    <div class="header__container">
+                    <div class="header__menu-group toggle">
+                        <ul class="header__menu toggle-menu">
+                            <li><a href="#" class="menu-item" id="log-inout">로그아웃</a></li>
+                            <li><a href="#" class="menu-item menu">MY PAGE</a></li>
+                            <li><a href="#" class="menu-item menu">MENU</a></li>
+                            <li><a href="#" class="menu-item menu">HOME</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                    <div id="toggle-btn">Header Menu Toggle Button</div>
+            </div>
+        </header>
+
+        <section>
+
+            <div class="content" style="color:lightslategrey; text-align: center; padding-top: 20px;"> 여기다 뭐 넣을지 고민중~ 디자인 미완성
+                <img src="" alt=""> 
+            </div>
+            
+            <div class="align-container"> 
+
+                <a href="./dashboard.html">
+                    <div class="card-container card-left">
+                        <i class="fas fa-external-link-alt" style="color:#fff; margin-top: 55px;"></i>
+                        <div style="padding-top: 10px; font-weight: 600; color:#fff">Dash Board</div>
+                    </div>
+                </a>
+                <div class="card-container card-right">
+
+                    <div class="head-text mygrade"> My grade </div>
+                    <div class="more">More ></div>
+                    <!-- 위 2개 div 코드는 현재 임시로 넣었음, arr도 마찬가지 -->
+
+                    <div class="card-data">
+                        <p>전체학점</p>
+                        <span class="card-grade">0/140</span>
+                        <span class="card-arrow">
+                            <i class="fas fa-long-arrow-alt-right" style="text-indent: -12px;"></i>
+                        </span>
+                    </div>
+
+                    <div class="card-data">
+                        <p>전공학점</p>
+                        <span class="card-grade">0/60</span>
+                        <span class="card-arrow">
+                            <i class="fas fa-long-arrow-alt-right" style="text-indent: -12px;"></i>
+                        </span>
+                    </div>
+
+                    <div class="card-data">
+                        <p>교양학점</p>
+                        <span class="card-grade">0/60</span>
+                        <span class="card-arrow">
+                            <i class="fas fa-long-arrow-alt-right" style="text-indent: -12px;"></i>
+                        </span>
+                    </div>
+
+                    <div class="card-data">
+                        <p>기타학점</p>
+                        <span class="card-grade">0/60</span>
+                        <span class="card-arrow">
+                            <i class="fas fa-long-arrow-alt-right" style="text-indent: -12px;"></i>
+                        </span>
+                    </div>
+                </div>
+        </div>
+
+            <div style="width: 10px; height: 10px;"> </div>
+            <div class="card-container table">
+                <div class="card-container-style">
+                    <table class="info-table">
+                        <caption>My info</caption>
+                        <thead>
+                            <tr class="table-top">
+                                <th>단과대학</th>
+                                <th>학부</th>
+                                <th>학번</th>
+                                <th>이름</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="bottom-line" data-th="단과대학">소프트웨어융합대학</td>
+                                <td class="bottom-line" data-th="학부">정보융합학부</td>
+                                <td class="bottom-line" data-th="학번">20202020</td>
+                                <td class="bottom-line" data-th="이름">Reason</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card-container table">
+                <div class="card-container-style">
+                    <table class="info-table">
+                        <caption>2020년도 1학기 성적내역</caption>
+                            
+                        </select>
+                        <thead>
+                            <tr class="table-top">
+                                <th>학정번호</th>
+                                <th>과목명</th>
+                                <th>개설학과</th>
+                                <th>이수구분</th>
+                                <th>학점</th>
+                                <th>성적</th>
+                                <th>인증구분</th>
+                                <th>재수강여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                            <tr>
+                                <td data-th="학정번호">H040-4-8995-01</td>
+                                <td data-th="과목명">산학협력캡스톤설계1</td>
+                                <td data-th="개설학과">정보융합학부</td>
+                                <td data-th="이수구분">전선</td>
+                                <td data-th="학점">3</td>
+                                <td data-th="성적">미입력</td>
+                                <td data-th="인증구분"></td>
+                                <td data-th="재수강여부"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </section>
+
+        <footer class="footer">
+                <ul class="copy-right">
+                    <li>Copyright © Var-Well. All Rights Reserved.</li>
+                </ul>
+        </footer>
+
+</div>
+</body>
+</html>
